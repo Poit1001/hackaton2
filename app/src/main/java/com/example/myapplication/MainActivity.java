@@ -3,6 +3,7 @@ package com.example.myapplication;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.app.AppCompatDelegate;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.View;
 import android.widget.AdapterView;
@@ -10,7 +11,6 @@ import android.widget.ArrayAdapter;
 import android.widget.Spinner;
 
 import com.example.myapplication.databinding.ActivityMainBinding;
-import com.example.myapplication.databinding.ActivityTeamleadBinding;
 
 public class MainActivity extends AppCompatActivity {
     private String role;
@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-
+        Intent intent = new Intent(this, TeamleadActivity.class);
         ArrayAdapter<String> rolesAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, roles);
         rolesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         Spinner sproles = (Spinner) findViewById(R.id.role_spinner);
@@ -49,8 +49,7 @@ public class MainActivity extends AppCompatActivity {
         binding.buttonCreate.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-
-                }
+                startActivity(intent);
             }
         });
     }

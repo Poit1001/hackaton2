@@ -1,5 +1,5 @@
 package com.example.myapplication;
 
-public class Teamlead {
+public class TeamleadActivity {
 
 }
