@@ -10,7 +10,7 @@
         android:id="@+id/textView"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="Регистрация"
+        android:text="Создайте свой проект"
         android:layout_marginTop="30dp"
         android:textSize="24sp"
         android:textColor="@color/samsung"/>
@@ -20,15 +20,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:background="@drawable/fill_grey"
-        android:hint="@string/name"
-        android:layout_marginTop="20dp"
-        android:padding="10dp"/>
-    <EditText
-        android:fontFamily=""
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:background="@drawable/fill_grey"
-        android:hint="Ссылка на тг"
+        android:hint="Название проекта"
         android:layout_marginTop="20dp"
         android:padding="10dp"/>
 
@@ -36,8 +28,11 @@
         android:id="@+id/role_spinner"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="20dp"
-        />
+        android:layout_marginTop="20dp" />
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"/>
 
 
     <androidx.appcompat.widget.AppCompatButton
@@ -46,6 +41,6 @@
         android:layout_height="wrap_content"
         android:background="@drawable/fill_blue"
         android:layout_marginTop="400dp"
-        android:text="Далее"
+        android:text="Создать"
         android:textColor="@color/white" />
 </LinearLayout>

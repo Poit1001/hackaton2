@@ -1,4 +1,10 @@
 <resources>
     <string name="app_name">My Application</string>
     <string name="name">Имя</string>
+    <string-array name="role_array">
+        <item>Тимлид</item>
+        <item>Дизайнер</item>
+        <item>Фронт</item>
+        <item>Бэк</item>
+    </string-array>
 </resources>
