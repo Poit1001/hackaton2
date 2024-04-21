@@ -23,7 +23,7 @@ public class MainActivity extends AppCompatActivity {
         binding = ActivityMainBinding.inflate(getLayoutInflater());
         setContentView(binding.getRoot());
 
-        Intent intent = new Intent(this, TeamleadActivity.class);
+        Intent intent = new Intent(this, RegProject.class);
         ArrayAdapter<String> rolesAdapter = new ArrayAdapter<String>(this, android.R.layout.simple_spinner_item, roles);
         rolesAdapter.setDropDownViewResource(android.R.layout.simple_spinner_dropdown_item);
         Spinner sproles = (Spinner) findViewById(R.id.role_spinner);
